@@ -1,0 +1,15 @@
+@import url("root.css");
+
+body {
+    background-color: var(--bodyBackground);
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: auto auto;
+}
+
+header {
+    width: 100%;
+    height: clamp(70px, 12vh, 100px);
+    background-color: var(--headBackground);
+    grid-column: span 10;
+}
