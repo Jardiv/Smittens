@@ -1,0 +1,30 @@
+:root {
+    --bgcolor: hsla(0, 0%, 98%, 1);
+    --buttonbgcolor: hsla(0, 0%, 0%, 1);
+    --buttonbgcolor_hover: hsl(177, 55%, 79%);
+    --txtcolor: hsla(0, 20%, 20%, 1);
+    --buttontxtcolor: white;
+    --searchbgcolor: hsl(0, 0%, 90%);
+    --searchbgcolor_hover: hsl(0, 0%, 85%);
+    --savebgcolor:hsl(0, 100%, 66%);
+
+    --fontsize_small: clamp(0.5rem, 1vw, 1.5rem);
+    --fontsize_normal: clamp(16px, 1rem, 64px);
+    --fontsize_large:clamp(24px, 1.5rem, 128px);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.centerFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,154 @@
+@import url("root.css");
+
+header {
+    height: clamp(50px, 10vh, 200px);
+    width: 100%;
+    background-color: var(--bgcolor);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: transparent;
+    backdrop-filter:blur(1000px);
+}
+
+.ss_nav{ 
+    display: none;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:800px) {
+    header, .content3, .content4, .content5{display: none;}
+    main > .container_content > .content3,
+    main > .container_content > .content4,
+    main > .container_content > .content5 {display: none;}
+    .container_content { grid-template-columns: 1fr 1fr !important;}
+    main > .container_content > .content1{
+
+    }
+    .ss_nav {display:flex;}
+}
+
+.logoContainer img { height: clamp(50px, 8vh , 100px); }
+.logoContainer{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoContainer .logoContainerButton {
+    font-size: var(--fontsize_normal);
+    background-color: var(--buttonbgcolor);
+    color: var(--buttontxtcolor);
+    height: clamp(20px, 6vh, 100px);
+    width: clamp(50px, 7vw, 300px);
+    border-radius: 50px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.logoContainer .logoContainerButton:hover{
+    color: black;
+    background-color: var(--buttonbgcolor_hover);
+    box-shadow: 5px 5px 50px rgb(102, 64, 238);
+}
+
+
+.searchContainer{ width: 60vw; }
+.searchContainer div {
+    background-color: var(--searchbgcolor);
+    border-radius: 50px;
+    transition: all 0.5;
+}
+.searchContainer div:hover { 
+    background-color: var(--searchbgcolor_hover);
+}
+.searchContainer input {
+    width: 55vw;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    font-size: var(--fontsize_normal);
+    border-radius: 50px;
+    padding: 3px;
+}
+.searchContainer input:focus { outline: none; }
+.searchIconContainer { height: 3vh; background-color: transparent;}
+.searchContainer span{
+    width: 30px;
+    height: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+.searchContainer label {background-color: transparent;}
+
+
+.navContainer {
+    width: 20vw; 
+    justify-content: space-evenly;
+}
+.navContainer span { 
+    font-size: calc(var(--fontsize_normal) + 20px);
+    transition: all 0.5s;
+}
+.navContainer .dropdownIcon{ font-size: 20px; }
+.navContainer span:hover {
+    color: var(--buttonbgcolor_hover);
+    text-shadow: 2px 3px black;
+}
+
+
+main{ height: auto; }
+
+.container_content{
+    padding: 0 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.container_content div{
+    display: flex;
+    flex-direction: column;
+    max-width: clamp(100px, 17vw, 500px);
+}
+.container_content div img {
+    object-fit:fill;
+    margin-bottom: 8px;
+    transition: all 1s;
+    scale: 1;
+    border-radius: 24px;
+}
+
+.container_content:has(img:hover) img {
+    opacity:0.8;
+    scale: 0.99;
+    filter: blur(1px);
+}
+.container_content div img:hover {
+    opacity: 1;
+    scale: 1.009;
+    filter: blur(0);
+}
+
+.imgContentContainer { 
+    position: relative; 
+    transition: all 0.2s;
+}
+.imgContentContainer:has(img:hover) .saveButton, .saveButton:hover{ 
+    visibility: visible;
+}
+.saveButton{
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: calc(var(--fontsize_normal) + 0.5rem);
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1;
+    color: var(--buttontxtcolor);
+    background-color: var(--savebgcolor);
+}
+.saveButton:hover{
+    cursor: pointer;
+}

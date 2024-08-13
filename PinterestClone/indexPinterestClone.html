@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitnerest</title>
+    <link rel="icon" type="image/x-icon" href="src/pinterestLogo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<!-- <body onscroll="addContent()"> -->
+<body>
+    <header>
+
+        <div class="logoContainer containers centerFlex">
+            <a href="#" class="imageLogo"><img src="src/pinterestLogo.svg" alt="Pinterest"></a>
+            <a href="#" class="centerFlex logoContainerButton">Home</a>
+            <a href="#" class="centerFlex logoContainerButton" onclick="addContent()">Create</a>
+        </div>
+
+
+        <div class="searchContainer containers centerFlex">
+            <div class="centerFlex">
+                <div class="searchIconContainer centerFlex">
+                    <label for="searchBox">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </label>
+                </div>
+                <input type="search" placeholder="Search" id="searchBox">
+            </div>
+        </div>
+
+
+        <nav class="navContainer containers centerFlex">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    notifications
+                </span>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    chat_bubble
+                </span>
+            </a>
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    person
+                </span>
+            </a>
+            <span class="material-symbols-outlined dropdownIcon">
+                keyboard_arrow_down
+            </span>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container_content" id="container_content">
+            <div class="content1 content"></div>
+            <div class="content2 content"></div>
+            <div class="content3 content"></div>
+            <div class="content4 content"></div>
+            <div class="content5 content"></div>
+        </div>
+
+    </main>
+    <!-- Nav screen small -->
+
+    <nav class="ss_nav">
+        <a href="#">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">
+                chat_bubble
+            </span>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">
+                person
+            </span>
+        </a>
+    </nav>
+
+    <!-- Nav screen small -->
+     <script src="script.js"></script>
+</body>
+</html>

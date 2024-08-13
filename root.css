@@ -1,5 +1,6 @@
 *{padding: 0; margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 :root{
     --headBackground: hsl(50, 30%, 90%);
+    --mainBackground: hsl(20, 20%, 85%);
     --bodyBackground: hsl(45, 29%, 97%);
 }

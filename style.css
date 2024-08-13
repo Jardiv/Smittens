@@ -13,3 +13,9 @@ header {
     background-color: var(--headBackground);
     grid-column: span 10;
 }
+
+.mainScreen{
+    grid-column: span 10;
+    height: 87vh;
+    background-color: var(--mainBackground);
+}
